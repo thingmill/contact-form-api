@@ -1,7 +1,8 @@
 {
   "scripts": {
     "serve": "./node_modules/.bin/nodemon app.js",
-    "dev": "./node_modules/.bin/nodemon app.js"
+    "dev": "./node_modules/.bin/nodemon app.js",
+    "start": "node app.js"
   },
   "dependencies": {
     "ajv": "^6.12.4",
