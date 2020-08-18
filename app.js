@@ -109,7 +109,7 @@ app.post('/:id', rateLimiter, (req, res) => {
     })
   }
   let app = apps[0]
-  if (Array.isArray(app.domains) && (req.headers.host == null || app.domains.filter(d => d === req.headers.host).length === 0)) {
+  if (Array.isArray(app.domains) && (req.headers.origin == null || app.domains.filter(d => d === req.headers.origin).length === 0)) {
     return res.status(400).json({
       success: false,
       errors: [{ code: 'forbidden-domain', message: 'Cannot send via this domain' }]
@@ -200,7 +200,7 @@ app.post('/:id', rateLimiter, (req, res) => {
       "confirmation",
       {
         ...req.body,
-        domain: req.headers.host,
+        domain: req.headers.origin,
         i18n
       }
     ) 

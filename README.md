@@ -31,7 +31,7 @@ A self hosted way to host a contact form on your website. A simple server writte
   - The `apps` object contain all the applications
     - `id`: used to identify the app when posting a message. *Required, Cannot be null*
     - `name`: name that will show up in email and webhooks. *Required, Cannot be null*
-    - `domains`: a array of all the allowed domains to post message for this app (verification via the 'Host' header), if `null`, no domain verification will be conducted.
+    - `domains`: a array of all the allowed domains to post message for this app (verification via the 'Origin' header), if `null`, no domain verification will be conducted.
     - `smtp`: the ID of the SMTP config that will be used for this app. *Required, Cannot be null*
     - `discord`: the Discord Webhook URL to notify for a message on this app, if `null` no webhooks will be sent
     - `email`: the email address that will be used to notify the "administrator" of a new message, if `null` no notification will be sent to the administrator
