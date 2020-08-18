@@ -1,0 +1,18 @@
+<p>{{ i18n.__('confirmation-email.header', name) }}</p>
+
+<p>{{ i18n.__('confirmation-email.body', domain) }}</p>
+
+<p>
+<b>{{ i18n.__('confirmation-email.fields.name') }}</b> {{ name }}
+</p>
+{% if subject not null and subject not empty %}
+<p>
+<b>{{ i18n.__('confirmation-email.fields.subject') }}</b> {{ subject }}
+</p>
+{% endif %}
+<p>
+<b>{{ i18n.__('confirmation-email.fields.email') }}</b> {{ email }}
+</p>
+<p>
+<b>{{ i18n.__('confirmation-email.fields.message') }}</b> {{ message }}
+</p>

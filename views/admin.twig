@@ -1,0 +1,22 @@
+<p>
+<b>Name:</b> {{ name }}
+</p>
+{% if subject not null and subject not empty %}
+<p>
+<b>Subject:</b> {{ subject }}
+</p>
+{% endif %}
+<p>
+<b>E-Mail:</b> {{ email }}
+</p>
+<p>
+<b>Timestamp:</b> {{ date }}
+</p>
+
+<p>
+{{ message }}
+<p>
+
+<p>
+<pre>This message is a notification sent by the contact form API.</pre>
+</p>

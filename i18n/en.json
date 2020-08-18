@@ -1,0 +1,15 @@
+{
+	"locale": "en",
+	"confirmation-email": {
+		"from": "Contact form",
+		"subject": "Your message is in good hands",
+		"header": "Hello %s,",
+		"body": "Thanks for your message on the website '%s', in this message you will find the copy of the message that you just sent:",
+		"fields": {
+			"name": "Your name:",
+			"email": "Your email:",
+			"subject": "Your subject:",
+			"message": "Your mesage:"
+		}
+	}
+}

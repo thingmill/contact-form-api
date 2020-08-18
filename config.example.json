@@ -1,0 +1,29 @@
+{
+  "smtp": [
+    {
+      "id": "thingmill",
+      "host": "smtp.example.org",
+      "port": 465,
+      "secure": true,
+      "auth": {"user": "wow@provider.com", "pass": "XXXX"}
+    }
+  ],
+  "apps": [
+    {
+      "id": "pagesassos",
+      "name": "Pages Assos",
+      "domains": ["pagesassos.thingmill.fr"],
+      "smtp": "thingmill",
+      "discord": null,
+      "email": null
+    },
+    {
+      "id": "lefuturiste",
+      "name": "Le Futuriste's Portfolio",
+      "domains": ["lefuturiste.fr"],
+      "smtp": "thingmill",
+      "discord": "https://discord.com/api/webhooks/XXX/XXX",
+      "email": "email@example.com"
+    }
+  ]
+}
