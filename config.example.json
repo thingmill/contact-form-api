@@ -1,7 +1,7 @@
 {
   "smtp": [
     {
-      "id": "thingmill",
+      "id": "smtp-con-1",
       "host": "smtp.example.org",
       "port": 465,
       "secure": true,
@@ -10,20 +10,20 @@
   ],
   "apps": [
     {
-      "id": "pagesassos",
-      "name": "Pages Assos",
-      "domains": ["pagesassos.thingmill.fr"],
-      "smtp": "thingmill",
+      "id": "a-site",
+      "name": "An example site",
+      "origins": ["https://example.org"],
+      "smtp": "smtp-con-1",
       "discord": null,
-      "email": null
+      "email": "webmaster@example.org"
     },
     {
-      "id": "lefuturiste",
-      "name": "Le Futuriste's Portfolio",
-      "domains": ["lefuturiste.fr"],
-      "smtp": "thingmill",
+      "id": "john-doe",
+      "name": "John-Doe's Portfolio",
+      "origins": ["https://lefuturiste.fr"],
+      "smtp": "smtp-con-1",
       "discord": "https://discord.com/api/webhooks/XXX/XXX",
-      "email": "email@example.com"
+      "email": "contact@johndoe.org"
     }
   ]
 }

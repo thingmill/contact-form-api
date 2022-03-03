@@ -1,6 +1,6 @@
 # Contact Form API
 
-A self hosted way to host a contact form on your website. A simple server written with Node.js and Express.js.
+A self hosted way to host a contact form on your website. A minimalistic server written in Node.js to fit your basic need.
 
 ## Features
 
@@ -8,8 +8,8 @@ A self hosted way to host a contact form on your website. A simple server writte
 - Email notification
 - Email confirmation (back to the sender)
 - Discord webhook notification
-- Rate limit
-- Domain Whitelist (CORS support)
+- Rate limiting
+- Origin/Domains whitelist (CORS support)
 - Flexible JSON configuration
 - I18n support (`fr` and `en`, add a new locale by creating a Pull Request!)
 
@@ -31,7 +31,7 @@ A self hosted way to host a contact form on your website. A simple server writte
   - The `apps` object contain all the applications
     - `id`: used to identify the app when posting a message. *Required, Cannot be null*
     - `name`: name that will show up in email and webhooks. *Required, Cannot be null*
-    - `domains`: a array of all the allowed domains to post message for this app (verification via the 'Origin' header), if `null`, no domain verification will be conducted.
+    - `origins`: a array of all the allowed origin to post message for this app (verification via the 'Origin' header), if `null`, no domain verification will be conducted.
     - `smtp`: the ID of the SMTP config that will be used for this app. *Required, Cannot be null*
     - `discord`: the Discord Webhook URL to notify for a message on this app, if `null` no webhooks will be sent
     - `email`: the email address that will be used to notify the "administrator" of a new message, if `null` no notification will be sent to the administrator
@@ -67,10 +67,12 @@ Also, fell free to make a Pull Request or to ask for new features.
 
 ## To Do List, RoadMap
 
-- Test and use in many projects
-- `config.json` JSON Schema validation at startup
-- Standard webhook support
-- Slack support
+- Add unit test
+- YAML config file instead of JSON
+- Validation of config file at startup
+- Reorganize code and allow for multiple notification modules (slack, Standard webhook support)
+- RSS feed
+- Allow to store messages
 
 ## Credits
 

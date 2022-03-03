@@ -1,4 +1,6 @@
 {
+  "name": "contact-form-api",
+  "license": "GPL-3.0-only",
   "scripts": {
     "serve": "./node_modules/.bin/nodemon app.js",
     "dev": "./node_modules/.bin/nodemon app.js",
