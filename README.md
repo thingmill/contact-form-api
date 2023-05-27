@@ -1,6 +1,6 @@
 # Contact Form API
 
-A self hosted way to host a contact form on your website. A minimalistic server written in Node.js to fit your basic need.
+A self hosted way to host a contact form on your website. A minimalist server written in Node.js to fit your basic need.
 
 ## Features
 
@@ -16,7 +16,7 @@ A self hosted way to host a contact form on your website. A minimalistic server 
 ## Installation & Configuration
 
 - Clone this repository
-- We recommand the use of yarn v1
+- We recommend the use of yarn v1
 - Install the packages: `yarn install`
 - Fill your `.env` (from `.env.example`) with the desired HOST and PORT env var
 - Then, From the content of `config.example.json`, create your own `config.json`:
@@ -35,7 +35,7 @@ A self hosted way to host a contact form on your website. A minimalistic server 
     - `smtp`: the ID of the SMTP config that will be used for this app. *Required, Cannot be null*
     - `discord`: the Discord Webhook URL to notify for a message on this app, if `null` no webhooks will be sent
     - `email`: the email address that will be used to notify the "administrator" of a new message, if `null` no notification will be sent to the administrator
-- Finnaly, you can run the server using the `yarn start` command
+- Finally, you can run the server using the `yarn start` command
 
 ## Usage
 
@@ -65,21 +65,20 @@ Don't hesitate to give feedback, ask for help or ask question about this project
 
 Also, fell free to make a Pull Request or to ask for new features.
 
-## To Do List, RoadMap
+## Todo List & Roadmap
 
-- Add unit test
-- YAML config file instead of JSON
+- Add docker image
+- Add systemd unit file
+- Add unit tests
+- Allow for YAML config file instead of JSON config
 - Validation of config file at startup
 - Reorganize code and allow for multiple notification modules (slack, Standard webhook support)
-- RSS feed
-- Allow to store messages
+- Publish an RSS feed
+- Allow to store messages in a basic way (in filesystem)
 
 ## Credits
 
-https://express-validator.github.io/docs/index.html
-
-https://discord.com/developers/docs/resources/webhook
-
-https://discord.com/developers/docs/resources/channel#embed-object-embed-field-structure
-
-https://cdnjs.com/libraries/axios
+- https://express-validator.github.io/docs/index.html
+- https://discord.com/developers/docs/resources/webhook
+- https://discord.com/developers/docs/resources/channel#embed-object-embed-field-structure
+- https://cdnjs.com/libraries/axios
